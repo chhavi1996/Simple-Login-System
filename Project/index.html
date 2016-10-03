@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bansal</title>
+<style type="text/css">
+
+.Main{
+	background-color: #373849;
+	margin: 3% 10%;
+	color: #eee;
+	text-align:center;
+	border: 0px solid #333;
+}
+.inputform{
+	float:left;
+	width:400px;
+	border:1px solid #456;
+	border-radius:10px;
+	padding:10px;
+	margin: 3%;
+	color: #222;
+}
+.inputform table tr td input,textarea,select{
+	width:200px;
+}
+#gender1,#gender2{width:10px;color: #222;}
+#submit{margin-left:100px;width:100px;}
+#reset{width:100px;}
+.design{
+	background-color:#787878;
+	color:white;
+}
+@media(max-width: 1200px){
+
+	.inputform{
+		width: 300px;
+	}
+	.design{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	.inputform{
+		width: 300px;
+	}
+	.inputform table tr td input,textarea,select{
+	width:150px;
+	float: left;	
+}
+}
+</style>
+</head>
+<body>
+
+<div class="Main">
+	<h2> Login-SignUp</h2>
+	<h3 style="background-color:#346633;color:#ddd;">Bansal</h3>
+	
+	<center>
+	<div class="inputform">
+			<h3 class="design">Not Registered?? Register here...</h3>
+
+
+		<form action="Register" method="post">
+			<table>
+				<tr><td></td><td><input type="text" name="first" placeholder="First Name" /></td></tr>
+				<tr><td></td><td><input type="text" placeholder="Last Name" name="last"/></td></tr>
+				<tr><td></td><td><input type="text" placeholder="Email" name="email"/></td></tr>
+				<tr><td></td><td><input type="password" placeholder="Password" name="pass"/></td></tr>
+				<tr><td></td><td><input id="gender1" type="radio" name="gender" value="male"/>Male 
+				<input type="radio" id="gender2" name="gender" value="female"/>Female
+				</td></tr>
+				<tr><td></td><td><input type="date" placeholder="Date Of Birth" name="dob"/></td></tr>
+				<tr><td></td><td><textarea name="address" placeholder="AddressLine" rows="4" cols="15"></textarea></td></tr>
+				<tr><td></td><td><input type="text" placeholder="City" name="city"/></td></tr>
+				<tr><td></td><td><input type="text" placeholder="State" name="state"/></td></tr>
+				<tr><td></td><td><select name="country">
+				<option>Select-Country:</option>
+				<option>India</option>
+				<option>Canada</option>
+				<option>China</option>
+				<option>Nepal</option>
+				<option>USA</option>
+				<option>France</option>
+				<option>Other</option>
+				</select></td></tr>
+				<tr><td></td><td><input type="text" placeholder="Contact" name="contact"/></td></tr>
+				<tr><td colspan="2"><input id="submit" type="submit" value="register"/></td>
+			<td><input id="reset" type="reset" value="clear"/></td>
+
+				</td></tr>
+				</center>
+			</table>
+		</form>
+	</div>
+
+		<div class="inputform" style="float: right;">
+		<h3 class="design">Login Form</h3>
+		<form action="Login" method="post">
+		<table>
+		<tr><td></td><td><input type="email" placeholder="xyz@gmail.com" name="email"/></td></tr>
+		<tr><td></td><td><input type="password" placeholder="Password" name="pass"/></td></tr>
+		<tr><td colspan="2"><input id="submit" type="submit" value="login"/>
+		</td></tr>
+		</table>
+		</form>
+		</div>
+</center>
+
+</div>
+</body>
+</html>
